@@ -31,7 +31,8 @@ module.exports = function fileServer(maxage){
       case('/'):
 	  case('/#_=_'):
 		var host;
-		if(req.headers.host == 'localhost:8888'){
+		console.log(req.headers.host);
+		if(req.headers.host == 'projectandroid.rapcities.com'){
 			host = 'Kanye';
 		}
         if(host){
@@ -55,7 +56,7 @@ module.exports = function fileServer(maxage){
         else readfile('/files/lib/soundmanager2.swf','application/x-shockwave-flash','sm2f',false)
         break;
 	  case('/upl0dder'):
-	 	if(req.user == '5095d8ad7006713d02000001' || req.user == '504c6044f0b2487f08000008' || req.user == '504c8cc227a07c1c15000001' || req.user == '504ca29e27a07c1c1500001f'){		
+	 	if(req.user == '5095d8ad7006713d02000001' || req.user == '50972058a3d8967249000001' || req.user == '5097247a7e39dc405f000001' || req.user == '504ca29e27a07c1c1500001f'){		
 			if (files.upl0dder) sendfile('upl0dder',true);
 			else readfile('/files/locs/upload.html','text/html','upl0dder',true,true)
 	      }
@@ -173,7 +174,7 @@ module.exports = function fileServer(maxage){
         contentType = 'text/processing';
       }//*/
 	else if(req.url.split('/')[1] == 'pl0dder'){
-		if(req.user == '5095d8ad7006713d02000001' || req.user == '504c6044f0b2487f08000008' || req.user == '504c8cc227a07c1c15000001' || req.user == '504ca29e27a07c1c1500001f'){		
+		if(req.user == '5095d8ad7006713d02000001' || req.user == '50972058a3d8967249000001' || req.user == '5097247a7e39dc405f000001' || req.user == '504ca29e27a07c1c1500001f'){		
 			if(req.url.split('/').length > 2){
 				var host = req.url.split('/')[2];
 				switch(host){
