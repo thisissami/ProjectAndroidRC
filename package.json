@@ -1,0 +1,16 @@
+{
+	"name": "projectAndroidRC",
+	"description": "Project Android RapCities edition",
+	"author": "thisissami",
+	"version": "0.1.0",
+	"dependencies": {
+		"connect": "2.3.1",
+		"mongodb": "1.0.2",
+		"passport":"0.1.12",
+		"passport-facebook":"0.1.4",
+		"connect-redis":"1.4.0",
+		"shortid":"1.0.8",
+		"fbgraph":"0.2.3"
+	},
+	"engine": "node = 0.8.14"
+}
