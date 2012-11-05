@@ -110,7 +110,7 @@ passport.use(new fpass({
 	}
 
 function authorized(req){
-	if(req == '5095d8ad7006713d02000001' || req == '50972058a3d8967249000001' || req == '5097247a7e39dc405f000001' || req == '504ca29e27a07c1c1500001f')
+	if(req == '5095d8ad7006713d02000001' || req == '50972058a3d8967249000001' || req == '5097247a7e39dc405f000001' || req == '5097bb4e407230fa7b000001')
 		return true;
 	else return false;
 }
